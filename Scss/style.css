@@ -1,4 +1,17 @@
-header {
-  max-width: 1600px;
-  max-height: 940px;
+.header_content {
+  width: 1600px;
+  height: 940px;
+  background-image: url(../img/header_back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #242424;
 }/*# sourceMappingURL=style.css.map */
