@@ -1,0 +1,54 @@
+.button_header {
+   background-color: rgba(14, 71, 121, 0);
+   border: 2px solid #ffff;
+   border-radius: 6px;
+   color: #ffff;
+   padding-inline: 24px;
+   padding-block: 9px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+}
+
+.button_header:hover {
+   transition: .5s;
+   background-color: $dark_green;
+   color: #ffff;
+}
+
+.button_header:active {
+   transition: .5s;
+
+   background: $dark_grey;
+
+}
+
+.button_header_bc_green {
+   width: 160px;
+   height: 42px;
+   background-color: $dark_green;
+   border: 2px solid $dark_green;
+   border-radius: 6px;
+   color: #ffff;
+   padding-inline: 24px;
+   padding-block: 9px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+}
+
+.button_header_bc_green:hover {
+   transition: .5s;
+   background-color: rgba(0, 0, 0, 0);
+}
+
+.button_header_bc_green:active {
+   transition: .5s;
+   background: $dark_grey;
+}
+.button_header_more{
+   padding-inline: 52px;
+   margin-right: 24px;
+}
