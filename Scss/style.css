@@ -26,6 +26,45 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  position: relative;
+}
+
+.logo_type2 {
+  position: absolute;
+  right: 50px;
+  top: 160px;
+}
+
+.contact_stick {
+  background-color: white;
+  width: 48px;
+  height: 144px;
+  border-radius: 12px;
+}
+
+.sticky_content {
+  display: block;
+  height: 25%;
+  background-color: white;
+  border-bottom: 1px solid #194484;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  text-align: center;
+  line-height: 36px;
+}
+
+.contact_stick a:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.sticky_content::before {
+  color: rgb(13, 110, 183);
+}
+
+.sticky_content:hover:before {
+  transition: 0.5s;
+  color: #66D6A0;
 }
 
 .header_nav {
