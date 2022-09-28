@@ -35,38 +35,6 @@
   top: 160px;
 }
 
-.contact_stick {
-  background-color: white;
-  width: 48px;
-  height: 144px;
-  border-radius: 12px;
-}
-
-.sticky_content {
-  display: block;
-  height: 25%;
-  background-color: white;
-  border-bottom: 1px solid #194484;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  text-align: center;
-  line-height: 36px;
-}
-
-.contact_stick a:last-child {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-.sticky_content::before {
-  color: rgb(13, 110, 183);
-}
-
-.sticky_content:hover:before {
-  transition: 0.5s;
-  color: #66D6A0;
-}
-
 .header_nav {
   display: flex;
   width: 100%;
@@ -120,6 +88,36 @@
   align-items: center;
 }
 
+.header_nav_list_sub {
+  position: relative;
+}
+
+.sub_menu {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  background: rgba(33, 33, 33, 0.8);
+  box-shadow: 2px 4px 16px rgba(158, 158, 158, 0.3);
+  padding: 12px 8px 0px 16px;
+  border-top: 3px solid #00A4E8;
+  position: absolute;
+  top: 36px;
+  border-radius: 0px 0px 16px 16px;
+  cursor: none;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+.sub_menu li {
+  padding-bottom: 13px;
+}
+.sub_menu li:last-child a:hover {
+  color: #00A4E8;
+}
+
+.header_nav_list_sub:hover .sub_menu {
+  visibility: visible;
+}
+
 .header_content {
   max-width: 590px;
   margin: 148px 0 0 6%;
@@ -136,6 +134,36 @@
   height: 160px;
   overflow: auto;
   margin: 16px 0 40px 0;
+}
+
+.contact_fixed {
+  background-color: white;
+  width: 48px;
+  height: 144px;
+  border-radius: 3px;
+}
+.contact_fixed a:last-child {
+  border-radius: 0 0 3px 3px;
+}
+
+.sticky_content {
+  display: block;
+  height: 25%;
+  background-color: white;
+  border-bottom: 1px solid rgba(25, 68, 132, 0.1764705882);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  text-align: center;
+  line-height: 36px;
+}
+
+.sticky_content::before {
+  color: rgb(13, 110, 183);
+}
+
+.sticky_content:hover:before {
+  transition: 0.5s;
+  color: #66D6A0;
 }
 
 .button_header {
