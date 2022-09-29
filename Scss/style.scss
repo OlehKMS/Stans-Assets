@@ -13,6 +13,7 @@
 .content_body {
    max-width: 1600px;
    margin: 0 auto;
+   background-color: white;
    @media screen and (max-width: 360px) {
       width: 355px;
    }
@@ -30,3 +31,4 @@
 @import "_header.scss";
 @import "_colors.scss";
 @import "_buttons.scss";
+@import "_home_content.scss";

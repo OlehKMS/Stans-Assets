@@ -1,0 +1,66 @@
+.content_technology {
+   margin-top: 100px;
+}
+
+.content_title {
+   font-weight: 700;
+   font-size: 36px;
+   font-family: "Sora";
+   text-transform: uppercase;
+   text-align: center;
+   color: $dark_blue;
+
+}
+
+.technologi_text {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 38px;
+   text-align: center;
+   height: 80px;
+   width: 900px;
+   overflow: auto;
+   margin: 0 auto;
+}
+
+.stans_blue {
+   color: rgba(0, 164, 232, 1);
+   font-weight: 700;
+}
+
+.assents_blue {
+   color: $dark_blue;
+   font-weight: 700;
+}
+
+.content_icon {
+   display: flex;
+   justify-content: center;
+   gap: 80px;
+}
+
+.android,
+.apple,
+.unity {
+   width: 64px;
+   height: 64px;
+   background-color: $dark_green;
+   border-radius: 16px;
+   text-align: center;
+   box-shadow: 0px 4px 12px rgba(41, 24, 111, 0.2);
+}
+
+.apple {
+   background-color: $medium_blue2;
+}
+
+.unity {
+   background-color: $light_blue;
+}
+
+.content_icon_link::before {
+   line-height: 60px;
+   font-size: 32px;
+}

@@ -9,6 +9,7 @@
 .content_body {
   max-width: 1600px;
   margin: 0 auto;
+  background-color: white;
 }
 @media screen and (max-width: 360px) {
   .content_body {
@@ -388,4 +389,70 @@
   .header_content_buttom {
     justify-content: space-around;
   }
+}
+
+.content_technology {
+  margin-top: 100px;
+}
+
+.content_title {
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "Sora";
+  text-transform: uppercase;
+  text-align: center;
+  color: #194484;
+}
+
+.technologi_text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  height: 80px;
+  width: 900px;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.stans_blue {
+  color: rgb(0, 164, 232);
+  font-weight: 700;
+}
+
+.assents_blue {
+  color: #194484;
+  font-weight: 700;
+}
+
+.content_icon {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.android,
+.apple,
+.unity {
+  width: 64px;
+  height: 64px;
+  background-color: #06B25F;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(41, 24, 111, 0.2);
+}
+
+.apple {
+  background-color: #276ED8;
+}
+
+.unity {
+  background-color: #84B5FF;
+}
+
+.content_icon_link::before {
+  line-height: 60px;
+  font-size: 32px;
 }/*# sourceMappingURL=style.css.map */
