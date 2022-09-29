@@ -25,8 +25,6 @@
 }
 
 .button_header_bc_green {
-   width: 160px;
-   height: 42px;
    background-color: $dark_green;
    border: 2px solid $dark_green;
    border-radius: 6px;
@@ -37,6 +35,13 @@
    font-style: normal;
    font-weight: 700;
    font-size: 16px;
+
+   @media screen and (max-width: 360px) {
+      font-size: 16px;
+      padding-inline: 14px;
+      padding-block: 9px;
+      text-align: center;
+   }
 }
 
 .button_header_bc_green:hover {
@@ -48,7 +53,21 @@
    transition: .5s;
    background: $dark_grey;
 }
-.button_header_more{
+
+.button_header_more {
    padding-inline: 52px;
-   margin-right: 24px;
+   @media screen and (max-width: 360px) {
+      font-size: 16px;
+      padding-inline: 42px;
+      padding-block: 9px;
+      text-align: center;
+   }
+}
+
+.header_content_buttom {
+   display: flex;
+   gap: 24px;
+   @media screen and (max-width: 360px) {
+      justify-content: space-around;
+   }
 }

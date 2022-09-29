@@ -10,6 +10,11 @@
   max-width: 1600px;
   margin: 0 auto;
 }
+@media screen and (max-width: 360px) {
+  .content_body {
+    width: 355px;
+  }
+}
 
 .content_text {
   font-family: "Montserrat";
@@ -28,6 +33,115 @@
   color: white;
   position: relative;
 }
+@media screen and (max-width: 360px) {
+  .header {
+    max-width: 355px;
+    max-height: 372px;
+    background: linear-gradient(89.8deg, #1F0047 20.07%, rgba(16, 0, 80, 0.1) 56.78%, rgba(25, 0, 123, 0) 83.62%), url(../img/min_header_background.jpg);
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding-top: 6px;
+  }
+  .header .logo_type2,
+.header .header_text,
+.header .contact_fixed {
+    display: none;
+  }
+}
+
+.min_header_logo {
+  display: none;
+}
+@media screen and (max-width: 360px) {
+  .min_header_logo {
+    display: block;
+  }
+}
+
+.menu-btn {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+@media screen and (max-width: 360px) {
+  .menu-btn {
+    display: block;
+  }
+}
+
+.menu-btn span {
+  width: 26px;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+  top: calc(50% - 5px);
+}
+
+.menu-btn span:nth-of-type(3) {
+  top: calc(50% + 5px);
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background: rgba(33, 33, 33, 0.8);
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+  text-align: center;
+}
+@media screen and (max-width: 360px) {
+  .menu {
+    display: block;
+  }
+}
+
+.menu.active {
+  transform: translateX(0);
+  text-align: center;
+}
+
+.menu ul li {
+  padding: 12px;
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.menu a {
+  color: white;
+}
+
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
 
 .logo_type2 {
   position: absolute;
@@ -42,6 +156,17 @@
   background: rgba(33, 33, 33, 0.3);
   box-shadow: 0px 4px 12px rgba(24, 9, 96, 0.1);
 }
+@media screen and (max-width: 360px) {
+  .header_nav {
+    max-width: 320px;
+    background: none;
+    box-shadow: none;
+    height: 24px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
 
 .header_list_item {
   display: flex;
@@ -54,6 +179,11 @@
   font-size: 16px;
   justify-content: center;
   gap: 20px;
+}
+@media screen and (max-width: 360px) {
+  .header_list_item {
+    display: none;
+  }
 }
 .header_list_item li {
   cursor: pointer;
@@ -122,12 +252,29 @@
   max-width: 590px;
   margin: 148px 0 0 6%;
 }
+@media screen and (max-width: 360px) {
+  .header_content {
+    max-width: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30% 0 0 0;
+  }
+}
 
 .title {
   font-size: 44px;
   font-weight: 700;
   font-family: "Sora";
   line-height: 60px;
+}
+@media screen and (max-width: 360px) {
+  .title {
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 36px;
+  }
 }
 
 .header_text {
@@ -191,8 +338,6 @@
 }
 
 .button_header_bc_green {
-  width: 160px;
-  height: 42px;
   background-color: #06B25F;
   border: 2px solid #06B25F;
   border-radius: 6px;
@@ -203,6 +348,14 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
+}
+@media screen and (max-width: 360px) {
+  .button_header_bc_green {
+    font-size: 16px;
+    padding-inline: 14px;
+    padding-block: 9px;
+    text-align: center;
+  }
 }
 
 .button_header_bc_green:hover {
@@ -217,5 +370,22 @@
 
 .button_header_more {
   padding-inline: 52px;
-  margin-right: 24px;
+}
+@media screen and (max-width: 360px) {
+  .button_header_more {
+    font-size: 16px;
+    padding-inline: 42px;
+    padding-block: 9px;
+    text-align: center;
+  }
+}
+
+.header_content_buttom {
+  display: flex;
+  gap: 24px;
+}
+@media screen and (max-width: 360px) {
+  .header_content_buttom {
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=style.css.map */
