@@ -140,8 +140,9 @@
       text-align: center;
       flex-direction: column;
       gap: 0px;
-      & img{
-         object-fit: cover;
+
+      & img {
+         object-fit: contain;
       }
    }
 }
@@ -174,4 +175,164 @@
 
 .reverse {
    flex-direction: row-reverse;
+
+   @media screen and (max-width: 360px) {
+      flex-direction: column;
+
+   }
 }
+
+
+
+.content_text_min {
+   display: none;
+
+   @media screen and (max-width: 360px) {
+      display: block;
+      text-align: start;
+   }
+}
+
+.partner_talk {
+   width: 1600px;
+   height: 540px;
+   background-image: url(../img/partner_talk.jpg);
+   background-repeat: no-repeat;
+   margin-top: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   @media screen and (max-width: 360px) {
+      max-width: 360px;
+      max-height: 380px;
+      background-size:cover;
+   }
+}
+
+.heading {
+   color: white;
+   text-align: center;
+   @media screen and (max-width: 360px) {
+      font-size: 24px;
+   }
+}
+
+.partner_talk_text {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   color: white;
+   text-align: center;
+   margin: 16px auto 36px auto;
+   @media screen and (max-width: 360px) {
+      font-size: 16px;
+   }
+}
+
+.partner_talk_button {
+   text-align: center;
+   align-items: center;
+   margin: 0 auto;
+}
+
+.achievemets {
+   margin-top: 80px;
+}
+
+.achievemets_card {
+   display: flex;
+   margin: 100px auto 130px auto;
+   justify-content: center;
+   gap: 26px;
+   @media screen and (max-width: 360px) {
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+.achievemets_card_item {
+   width: 322px;
+   height: 383px;
+   border-radius: 16px;
+   box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+.card1 {
+   background-image: url(../img/card_item1.svg);
+}
+
+.card2 {
+   background-image: url(../img/card_item2.png);
+}
+
+.card3 {
+   background-image: url(../img/card_item3.svg);
+}
+
+.card4 {
+   background-image: url(../img/card_item4.png);
+}
+
+.achievemets_card_text {
+   color: $dark_grey;
+   text-align: center;
+   margin-bottom: 62px;
+
+   span {
+      font-weight: 700;
+      color: $medium_blue2;
+   }
+}
+
+#black_color {
+   color: $dark_grey;
+}
+
+.partners {
+   margin: 0 auto;
+   background-image: url(../img/partnetrs_backg.svg);
+   width: 1600px;
+   @media screen and (max-width: 360px) {
+      max-width: 360px;
+   }
+}
+
+.partenr_item_cards {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 24px;
+   justify-content: center;
+
+}
+
+.partner_card {
+   width: 322px;
+   height: 160px;
+   box-shadow: 0px 3px 16px 4px rgba(29, 51, 107, 0.1);
+   border-radius: 16px;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   @media screen and (max-width: 360px) {
+      width: 146px;
+      height: 73px;
+   }
+}
+.display_none {
+   @media screen and (max-width: 360px) {
+      display: none;
+
+   }
+}
+
+
+// .display_none
+// @media screen and (max-width: 360px) {
+// }
