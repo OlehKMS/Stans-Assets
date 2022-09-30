@@ -1,5 +1,21 @@
+.content_min_text {
+   display: none;
+
+   @media screen and (max-width: 360px) {
+      display: block;
+      text-align: center;
+      width: 324px;
+      height: fit-content;
+      margin: 16px auto;
+   }
+}
+
 .content_technology {
    margin-top: 100px;
+
+   @media screen and (max-width: 360px) {
+      margin-top: 20px;
+   }
 }
 
 .content_title {
@@ -10,6 +26,10 @@
    text-align: center;
    color: $dark_blue;
 
+   @media screen and (max-width: 360px) {
+      font-size: 22px;
+      margin-bottom: 22px;
+   }
 }
 
 .technologi_text {
@@ -21,8 +41,14 @@
    text-align: center;
    height: 80px;
    width: 900px;
-   overflow: auto;
-   margin: 0 auto;
+   margin: 60px auto 30px auto;
+
+   @media screen and (max-width: 360px) {
+      font-size: 18px;
+      text-align: center;
+      max-width: 320px;
+      margin: 0 auto;
+   }
 }
 
 .stans_blue {
@@ -39,6 +65,13 @@
    display: flex;
    justify-content: center;
    gap: 80px;
+
+   @media screen and (max-width: 360px) {
+      justify-content: space-around;
+      gap: 50px;
+      margin-top: 88px;
+      margin-bottom: 22px;
+   }
 }
 
 .android,
@@ -63,4 +96,82 @@
 .content_icon_link::before {
    line-height: 60px;
    font-size: 32px;
+}
+
+.grade_star {
+   height: 140px;
+   width: 900px;
+   box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
+   border-radius: 16px;
+   margin: 0 auto 120px auto;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+   @media screen and (max-width: 360px) {
+      height: 294px;
+      max-width: 320px;
+      display: flex;
+      flex-direction: column;
+      margin: 80px auto;
+   }
+}
+
+.content_services {
+   width: 70%;
+   margin: 100px auto 0 auto;
+   display: flex;
+   flex-direction: column;
+
+   @media screen and (max-width: 360px) {
+      max-width: 360px;
+   }
+
+}
+
+.content_services_text_img {
+   display: flex;
+   flex-basis: 100%;
+   align-items: center;
+   gap: 24px;
+
+   @media screen and (max-width: 360px) {
+      font-size: 16px;
+      text-align: center;
+      flex-direction: column;
+      gap: 0px;
+      & img{
+         object-fit: cover;
+      }
+   }
+}
+
+.subtitle {
+   font-size: 24px;
+   font-weight: 700;
+   color: $medium_blue;
+   font-family: "Sora";
+   margin-bottom: 12px;
+
+   @media screen and (max-width: 360px) {
+      font-size: 18px;
+      text-align: center;
+   }
+}
+
+.content_services_text {
+   max-height: max-content;
+   max-width: 555px;
+
+   @media screen and (max-width: 360px) {
+      font-size: 16px;
+      text-align: center;
+      width: 320px;
+      margin: 0 auto;
+
+   }
+}
+
+.reverse {
+   flex-direction: row-reverse;
 }
