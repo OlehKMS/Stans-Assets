@@ -248,10 +248,11 @@
    margin: 100px auto 130px auto;
    justify-content: center;
    gap: 26px;
-
+   width: 1600px;
    @media screen and (max-width: 360px) {
       flex-direction: column;
       align-items: center;
+      max-width: 360px;
    }
 }
 
@@ -313,7 +314,7 @@
    flex-wrap: wrap;
    gap: 24px;
    justify-content: center;
-
+   margin-top: 80px;
 }
 
 .partner_card {
@@ -347,8 +348,8 @@
 
       span {
          font-weight: 700;
-font-size: 24px;
-      }
+         font-size: 24px;
+               }
 
       @media screen and (max-width: 360px) {
 
@@ -362,11 +363,21 @@ font-size: 24px;
    display: flex;
    justify-content: center;
    gap: 190px;
+   @media screen and (max-width: 360px) {
+   flex-direction: column; 
+   gap: 30px;  
+   }
 }
 .contacts_item{
    font-family: "Montserrat";
    font-weight: 400;
    font-size: 24px;
+   @media screen and (max-width: 360px) {
+      height: 320px;
+      width: 320px;
+      text-align: start;
+      margin: 20px auto;
+      }
 }
 
 .contat_form {
@@ -385,17 +396,35 @@ font-size: 24px;
       height: 40px;
       width: 340px;
       padding-inline: 16px;
+      @media screen and (max-width: 360px) {
+         width: 275px;
+         }
    }
    textarea{
       resize: none;
       height: 80px;
       width: 340px;
-      padding-inline: 16px;
+      padding: 5px 13px;
+      font-size: 14px;
+      font-family: 'Open Sans';
+      font-weight: 400;
+      @media screen and (max-width: 360px) {
+         width: 275px;
+         }
    }
    button{
       width: 340px;
       background-color: #2DA531;
+      @media screen and (max-width: 360px) {
+         width: 275px;
+         }
    }
+   @media screen and (max-width: 360px) {
+      width: 320px;  
+      height: 360px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      }
 }
 .contacts_item{
    li{
