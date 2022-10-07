@@ -1,0 +1,134 @@
+.footer {
+   width: 1600px;
+   height: 600px;
+   background-image: url(../img/Footer_b_i.svg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+
+   @media screen and (max-width: 360px) {
+      max-width: 360px;
+      height: max-content;
+      background-image: url(../img/footer_bi_min.jpg);
+   }
+}
+
+.footer_content {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: baseline;
+   height: 277px;
+
+   @media screen and (max-width: 360px) {
+      height: fit-content;
+      flex-direction: column;
+      align-items: stretch;
+      padding-inline-start: 12px;
+   }
+}
+
+.footer_contact_icon {
+   max-width: 200px;
+   gap: 40px;
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 64px;
+
+   a {
+      font-size: 40px;
+
+      &:hover::before {
+         transition: .5s;
+         color: #66D6A0;
+      }
+   }
+
+   @media screen and (max-width: 360px) {
+      flex-wrap: nowrap;
+
+      a {
+         font-size: 32px;
+      }
+   }
+}
+
+.footer_services,
+.footer_technologies {
+   display: flex;
+   flex-direction: column;
+
+}
+
+.footer_services_title,
+.footer_technologies {
+   text-transform: uppercase;
+   color: white;
+   font-family: "Sora";
+   font-weight: 700;
+   font-size: 20px;
+   @media screen and (max-width: 360px) {
+      margin-top: 20px;
+   }
+}
+.footer_services{
+   @media screen and (max-width: 360px) {
+      margin-top: 20px;
+   }
+}
+.footer_services_list,
+.footer_technologies_list {
+   color: white;
+   display: flex;
+   flex-direction: column;
+   gap: 18px;
+   margin-top: 30px;
+   @media screen and (max-width: 360px) {
+      margin-top: 20px;
+   }
+   li {
+      text-indent: 16px;
+   }
+
+   a {
+      color: white;
+
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}
+
+.product_portfolio_blog {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   
+}
+
+.footer_end {
+   display: flex;
+   width: 100%;
+   height: 60px;
+   background: #FFFFFF;
+   justify-content: center;
+   align-items: center;
+
+  
+   @media screen and (max-width: 360px) {
+      display: flex;
+      flex-direction: reverse;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: fit-content;
+   }
+}
+
+.footer_end_text {
+   font-family: "Open Sans";
+   font-weight: 400;
+   font-size: 14px;
+}
