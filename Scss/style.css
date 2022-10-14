@@ -436,6 +436,27 @@
   background-color: #242424;
 }
 
+.button_secondary_norm {
+  padding-block: 8px;
+  padding-inline: 24px;
+  background-color: white;
+  color: #06B25F;
+  border: 2px solid #06B25F;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  cursor: pointer;
+}
+.button_secondary_norm:hover {
+  transition: 0.5s;
+  color: white;
+  background-color: #06B25F;
+}
+.button_secondary_norm:active {
+  background-color: #242424;
+}
+
 .content_min_text {
   display: none;
 }
@@ -1058,4 +1079,98 @@
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 14px;
+}
+
+.header_white {
+  max-width: 1600px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.header_nav_white {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 360px) {
+  .header_nav_white {
+    max-width: 320px;
+    background: none;
+    box-shadow: none;
+    height: 24px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
+
+.header_list_item_white {
+  display: flex;
+  flex-basis: 100%;
+  height: 80px;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (max-width: 360px) {
+  .header_list_item_white {
+    display: none;
+  }
+}
+.header_list_item_white li {
+  color: #0D6EB7;
+  cursor: pointer;
+}
+.header_list_item_white li:hover {
+  transition: 0.5s;
+  color: #00A4E8;
+}
+.header_list_item_white li:last-child a:hover {
+  color: white;
+}
+.header_list_item_white li:last-child a {
+  color: #06B25F;
+}
+.header_list_item_white li::after {
+  color: #0D6EB7;
+}
+.header_list_item_white a {
+  color: #0D6EB7;
+}
+.header_list_item_white a:hover {
+  transition: 0.5s;
+  color: #00A4E8;
+}
+
+.sub_menu_white {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  background: black;
+  box-shadow: 2px 4px 16px rgba(158, 158, 158, 0.4);
+  padding: 12px 8px 0px 16px;
+  border-top: 3px solid #00A4E8;
+  position: absolute;
+  top: 36px;
+  border-radius: 0px 0px 16px 16px;
+  cursor: none;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+.sub_menu_white li {
+  padding-bottom: 13px;
+}
+.sub_menu_white li:last-child a:hover {
+  color: #00A4E8;
+}
+
+.header_nav_list_sub:hover .sub_menu_white {
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */

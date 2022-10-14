@@ -119,3 +119,25 @@
       background-color: $dark_grey;
    }
 }
+.button_secondary_norm{
+   padding-block: 8px;
+   padding-inline: 24px;
+   background-color: white;
+   color: $dark_green;
+   border: 2px solid $dark_green;
+   border-radius: 6px;
+   font-size: 16px;
+   font-family: "Montserrat";
+   font-weight: 700;
+   
+   cursor: pointer;
+   &:hover{
+      transition: .5s;
+      color: white;
+      background-color:$dark_green ;
+   }
+   &:active{
+      background-color: $dark_grey;
+   }
+   
+}
