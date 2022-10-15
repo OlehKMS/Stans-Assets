@@ -268,8 +268,9 @@
   font-weight: 700;
   font-family: "Sora";
   line-height: 60px;
+  text-transform: uppercase;
 }
-@media screen and (max-width: 360px) {
+@media (max-width: 360px) {
   .title {
     font-size: 24px;
     line-height: 38px;
@@ -289,6 +290,9 @@
   width: 48px;
   height: 144px;
   border-radius: 3px;
+  position: fixed;
+  right: 0;
+  top: 30%;
 }
 .contact_fixed a:last-child {
   border-radius: 0 0 3px 3px;
@@ -436,7 +440,7 @@
   background-color: #242424;
 }
 
-.button_secondary_norm {
+#button_secondary_norm {
   padding-block: 8px;
   padding-inline: 24px;
   background-color: white;
@@ -448,12 +452,12 @@
   font-weight: 700;
   cursor: pointer;
 }
-.button_secondary_norm:hover {
+#button_secondary_norm:hover {
   transition: 0.5s;
   color: white;
   background-color: #06B25F;
 }
-.button_secondary_norm:active {
+#button_secondary_norm:active {
   background-color: #242424;
 }
 
@@ -1087,6 +1091,17 @@
   height: -moz-max-content;
   height: max-content;
 }
+.header_white .menu-btn span {
+  background-color: #194484;
+}
+@media (max-width: 360px) {
+  .header_white {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+  }
+}
 
 .header_nav_white {
   width: 100%;
@@ -1135,9 +1150,6 @@
 .header_list_item_white li:last-child a:hover {
   color: white;
 }
-.header_list_item_white li:last-child a {
-  color: #06B25F;
-}
 .header_list_item_white li::after {
   color: #0D6EB7;
 }
@@ -1153,7 +1165,7 @@
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
-  background: black;
+  background: white;
   box-shadow: 2px 4px 16px rgba(158, 158, 158, 0.4);
   padding: 12px 8px 0px 16px;
   border-top: 3px solid #00A4E8;
@@ -1173,4 +1185,37 @@
 
 .header_nav_list_sub:hover .sub_menu_white {
   visibility: visible;
+}
+
+.heade_content_white {
+  width: 1400px;
+  margin: 0 auto;
+  margin-top: 42px;
+  display: flex;
+  justify-content: space-between;
+}
+.heade_content_white h1 {
+  color: #194484;
+}
+.heade_content_white picture {
+  margin-top: -50px;
+}
+
+.header_content_nav {
+  color: #194484;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+.header_content_nav ._arrow_arrow_text::after {
+  font-size: 5px;
+  color: black;
+  display: inline-block;
+  transform: rotate(270deg);
+  -webkit-padding-before: 6px;
+          padding-block-start: 6px;
+  padding-inline: 6px;
+}
+.header_content_nav a {
+  color: #194484;
 }/*# sourceMappingURL=style.css.map */

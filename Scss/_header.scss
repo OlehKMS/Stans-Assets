@@ -257,8 +257,9 @@
    font-weight: 700;
    font-family: 'Sora';
    line-height: 60px;
+   text-transform: uppercase;
 
-   @media screen and (max-width: 360px) {
+   @media  (max-width: 360px) {
       font-size: 24px;
       line-height: 38px;
       text-align: center;
@@ -278,6 +279,9 @@
    width: 48px;
    height: 144px;
    border-radius: 3px;
+   position: fixed;
+   right: 0;
+   top: 30%;
 
    & a:last-child {
       border-radius: 0 0 3px 3px;
