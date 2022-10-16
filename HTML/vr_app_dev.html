@@ -1,98 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link
-         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&family=Sora:wght@700&display=swap"
-         rel="stylesheet">
-      <link rel="stylesheet" href="../Scss/icon_font.css">
-      <link rel="stylesheet" href="../Scss/style.css">
-      <title>VR App Development</title>
-   </head>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&family=Sora:wght@700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="../Scss/icon_font.css">
+   <link rel="stylesheet" href="../Scss/style.css">
+   <title>VR App Development</title>
+</head>
+
 <body>
-   <div class="content_body">
-   <header>
-      <div class="header_white">
-         <div class="min_header_logo">
-            <a href="./home_page.html">
-               <img src="../img/header_white_min_logo.svg" alt="#logo"></a>
+   <div class="main_white">
+      <header>
+         <div class="header_white">
+            <div class="min_header_logo">
+               <a href="./home_page.html">
+                  <img src="../img/header_white_min_logo.svg" alt="#logo"></a>
+            </div>
+            <div class="menu-btn">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+            <div class="menu">
+               <nav>
+                  <ul>
+                     <li><a href="#">list</a></li>
+                     <li><a href="#">list</a></li>
+                     <li><a href="#">list</a></li>
+                     <li><a href="#">list</a></li>
+                  </ul>
+               </nav>
+            </div>
+            <ul class="header_list_item_white">
+               <li> <a href="./home_page.html"><img class="logo_type1" src="../img/logo_blue.svg" alt="logo"></a></li>
+               <li class="_arrow_arrow_text arrow header_nav_list_sub">SERVICES
+                  <ul class="sub_menu_white">
+                     <li><a href="#">MOBILE APPLICATION DEVELOPMENT</a></li>
+                     <li><a href="#">GAME DEVELOPMENT OUTSOURCING</a></li>
+                     <li><a href="./vr_app_dev.html">VR APP DEVELOPMENT</a> </li>
+                     <li><a href="#">DEDICATED DEVELOPERS</a> </li>
+                     <li><a href="#">SDK DEVELOPMENT</a></li>
+                     <li> <a href="#">3D MODELING SERVICES</a></li>
+                     <li> <a href="#">AR APP DEVELOPMENT</a></li>
+                  </ul>
+               </li>
+               <li class="_arrow_arrow_text arrow header_nav_list_sub">TECHNOLOGIES
+                  <ul class="sub_menu_white">
+                     <li><a href="#">Android</a></li>
+                     <li><a href="#">IOS</a></li>
+                     <li><a href="#">Unity</a> </li>
+                  </ul>
+               </li>
+               <li><a href="./produts.html">PRODUCTS</a></li>
+               <li><a href="./portfolio.html">PORTFOLIO</a></li>
+               <li> <a href="./blog.html">BLOG</a> </li>
+               <li class="_arrow_arrow_text arrow header_nav_list_sub">ABOUT US
+                  <ul class="sub_menu_white">
+                     <li><a href="#">Contacts</a></li>
+                     <li><a href="#">Team</a></li>
+                     <li><a href="#">Join the team</a> </li>
+                  </ul>
+               </li>
+               <li>
+                  <a id="button_secondary_norm" href="./contact_us.html">CONTACT US</a>
+               </li>
+            </ul>
          </div>
-         <div class="menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
+         <div class="contact_fixed display_none">
+            <a class="_icon-Facebook sticky_content" href="#"></a>
+            <a class="_icon-in sticky_content" href="#"></a>
+            <a class="_icon-Viber sticky_content" href="#"></a>
+            <a class="_icon-Skype sticky_content" href="#"></a>
          </div>
-         <div class="menu">
-            <nav>
-               <ul>
-                  <li><a href="#">list</a></li>
-                  <li><a href="#">list</a></li>
-                  <li><a href="#">list</a></li>
-                  <li><a href="#">list</a></li>
-               </ul>
-            </nav>
+         <div class="heade_content_white">
+            <div class="header_content_nav content_text">
+               <div>
+                  <span class="_arrow_arrow_text display_none"><a href="./home_page.html">Home</a></span>
+                  <span class="_arrow_arrow_text"><a href="#services">Services</a></span>
+                  VR App Development
+               </div>
+               <div>
+                  <h1 class="title">VR APP Development</h1>
+               </div>
+            </div>
+            <picture>
+               <source media="(max-width: 360px )" srcset="../img/header_min_white_img.svg">
+               <img src="../img/header_white_img.svg" alt="#">
+            </picture>
          </div>
-         <ul class="header_list_item_white">
-            <li> <a href="./home_page.html"><img class="logo_type1" src="../img/logo_blue.svg" alt="logo"></a></li>
-            <li class="_arrow_arrow_text arrow header_nav_list_sub">SERVICES
-               <ul class="sub_menu_white">
-                  <li><a href="#">MOBILE APPLICATION DEVELOPMENT</a></li>
-                  <li><a href="#">GAME DEVELOPMENT OUTSOURCING</a></li>
-                  <li><a href="./vr_app_dev.html">VR APP DEVELOPMENT</a> </li>
-                  <li><a href="#">DEDICATED DEVELOPERS</a> </li>
-                  <li><a href="#">SDK DEVELOPMENT</a></li>
-                  <li> <a href="#">3D MODELING SERVICES</a></li>
-                  <li> <a href="#">AR APP DEVELOPMENT</a></li>
-               </ul>
-            </li>
-            <li class="_arrow_arrow_text arrow header_nav_list_sub">TECHNOLOGIES
-               <ul class="sub_menu_white">
-                  <li><a href="#">Android</a></li>
-                  <li><a href="#">IOS</a></li>
-                  <li><a href="#">Unity</a> </li>
-               </ul>
-            </li>
-            <li><a href="./produts.html">PRODUCTS</a></li>
-            <li><a href="./portfolio.html">PORTFOLIO</a></li>
-            <li> <a href="./blog.html">BLOG</a> </li>
-            <li class="_arrow_arrow_text arrow header_nav_list_sub">ABOUT US
-               <ul class="sub_menu_white">
-                  <li><a href="#">Contacts</a></li>
-                  <li><a href="#">Team</a></li>
-                  <li><a href="#">Join the team</a> </li>
-               </ul>
-            </li>
-            <li>
-               <a id="button_secondary_norm" class=" ml-150px" href="./contact_us.html">CONTACT US</a>
-            </li>
-         </ul>
-      </div>
-      <div class="contact_fixed">
-         <a class="_icon-Facebook sticky_content" href="#"></a>
-         <a class="_icon-in sticky_content" href="#"></a>
-         <a class="_icon-Viber sticky_content" href="#"></a>
-         <a class="_icon-Skype sticky_content" href="#"></a>
-      </div>
-   </header>
-   <div class="heade_content_white">
-      <div class="header_content_nav content_text">
-         <div>
-            <span class="_arrow_arrow_text"><a href="./home_page.html">Home</a></span>
-               <span class="_arrow_arrow_text"><a href="#services">Services</a></span>      
-               VR App Development
+         <div class="header__white_content_text">
+            <div>
+               <h3 class="subtitle">
+                  Header 1
+               </h3>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel cursus.
+                  Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus rutrum,
+                  libero augue venenatis leo, in maximus ipsum dui et est. In in aliquet libero. In ac enim non lectus
+                  convallis feugiat.
+
+               </p>
+               <p>Ut in pharetra tortor. Quisque ligula magna, iaculis non porta ut, suscipit sit amet sapien. Sed ut
+                  pharetra mauris. Cras ac dapibus turpis. Etiam suscipit orci eu tristique gravida.</p>
+            </div>
+            <div>
+               <h3 class="subtitle">
+                  Header 2
+               </h3>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales eleifend dolor vel cursus.
+                  Fusce in ligula ut leo eleifend lobortis fringilla non elit. Vivamus mollis, odio ac finibus rutrum,
+                  libero augue venenatis leo, in maximus ipsum dui et est. In in aliquet libero. In ac enim non lectus
+                  convallis feugiat.
+
+               </p>
+               <p>Ut in pharetra tortor. Quisque ligula magna, iaculis non porta ut, suscipit sit amet sapien. Sed ut
+                  pharetra mauris. Cras ac dapibus turpis. Etiam suscipit orci eu tristique gravida.</p>
+            </div>
          </div>
-               <div><h1 class="title">VR APP Development</h1></div>
-      </div>
-      <picture>
-         <img src="../img/header_white_img.svg" alt="#">
-         <source media="(min-width:360px )" srcset="../img/header_min_white_img_svg">
-      </picture>
+      </header>
+
+
    </div>
-</div>
    <script src="../js/script.js"></script>
 </body>
+
 </html>
