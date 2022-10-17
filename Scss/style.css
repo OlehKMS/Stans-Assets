@@ -1100,13 +1100,18 @@
     justify-content: space-between;
     align-items: center;
     padding-block: 10px;
-    padding-inline: 30px;
   }
 }
 
 .main_white {
   max-width: 1360px;
   margin: 0 auto;
+}
+@media (max-width: 360px) {
+  .main_white {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 
 .header_nav_white {
@@ -1241,18 +1246,77 @@
 
 .header__white_content_text {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 86px;
 }
 .header__white_content_text div {
-  width: 50%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.header__white_content_text div p {
+  max-height: 245px;
+  overflow: auto;
 }
 @media screen and (max-width: 360px) {
   .header__white_content_text {
     display: flex;
     flex-direction: column;
+    margin-bottom: 80px;
   }
   .header__white_content_text div {
     width: 100%;
+  }
+}
+
+.vr_services_list {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+@media screen and (max-width: 360px) {
+  .vr_services_list {
+    gap: 29px;
+  }
+}
+
+.vr_services_item figure {
+  height: 320px;
+  width: 322px;
+  background-color: #F4F8FD;
+  box-shadow: 0px 3px 16px 4px rgba(29, 51, 107, 0.1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 46px;
+}
+.vr_services_item figure:hover {
+  background-color: #FFFFFF;
+}
+@media screen and (max-width: 360px) {
+  .vr_services_item figure {
+    height: 162px;
+    width: 145px;
+    gap: 20px;
+  }
+}
+.vr_services_item figcaption {
+  font-family: "Sora";
+  font-weight: 700;
+  font-size: 20px;
+  color: #0D6EB7;
+  line-height: 30px;
+  text-align: center;
+}
+@media screen and (max-width: 360px) {
+  .vr_services_item figcaption {
+    font-size: 12px;
+    line-height: 22px;
   }
 }/*# sourceMappingURL=style.css.map */
