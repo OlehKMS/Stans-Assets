@@ -1344,6 +1344,19 @@
   align-items: center;
   background-image: url(../img/recent_projects_bc.svg);
 }
+.recent_projects h2 {
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 360px) {
+  .recent_projects h2 {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .recent_projects {
+    margin-top: 150px;
+  }
+}
 
 .recent_projects_list {
   display: flex;
@@ -1351,6 +1364,7 @@
 @media screen and (max-width: 360px) {
   .recent_projects_list {
     flex-direction: column;
+    gap: 40px;
   }
 }
 
@@ -1379,4 +1393,64 @@
     width: 320px;
     height: 390px;
   }
+}
+
+.faqs {
+  width: 100%;
+  margin-top: 30px;
+}
+@media screen and (max-width: 360px) {
+  .faqs {
+    width: 320px;
+  }
+}
+
+.faqs_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+
+.faqs_content_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 26px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+@media screen and (max-width: 360px) {
+  .faqs_content_items {
+    gap: 20px;
+  }
+}
+.faqs_content_items li {
+  list-style-type: disc;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+  color: #0D6EB7;
+}
+@media screen and (max-width: 360px) {
+  .faqs_content_items li {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+}
+
+.faqs_content_items_block {
+  display: flex;
+  justify-content: space-between;
+  max-width: 880px;
+  margin: 0 auto;
+  gap: 28px;
+}
+.faqs_content_items_block img {
+  width: 34px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

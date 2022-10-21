@@ -274,12 +274,27 @@
    justify-content: center;
    align-items: center;
    background-image: url(../img/recent_projects_bc.svg);
+
+   h2 {
+      margin-bottom: 90px;
+
+      @media screen and (max-width: 360px) {
+         margin-bottom: 50px;
+      }
+   }
+
+   @media screen and (max-width: 360px) {
+      margin-top: 150px;
+   }
 }
-.recent_projects_list{
+
+.recent_projects_list {
    display: flex;
+
    @media screen and (max-width: 360px) {
       flex-direction: column;
-      }
+      gap: 40px;
+   }
 }
 
 .recent_projects_item {
@@ -287,20 +302,86 @@
    height: 438px;
    box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
    border-radius: 16px;
-   img{
+
+   img {
       border-radius: 16px 16px 0 0;
    }
-   figcaption{
+
+   figcaption {
       width: 368px;
       margin: 0 auto;
       margin-top: 16px;
+
       @media screen and (max-width: 360px) {
          margin-top: 12px;
          width: 294px;
-         }
+      }
    }
+
    @media screen and (max-width: 360px) {
       width: 320px;
       height: 390px;
-      }
+   }
 }
+
+// start section faqs
+.faqs {
+   width: 100%;
+
+   margin-top: 30px;
+
+   @media screen and (max-width: 360px) {
+      width: 320px;
+
+   }
+}
+
+.faqs_content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 60px;
+
+}
+
+.faqs_content_items {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 26px;
+   
+   height: max-content;
+   
+   @media screen and (max-width: 360px) {
+      gap: 20px;
+   }
+
+   li {
+      list-style-type: disc;
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 20px;
+      color: $medium_blue;
+
+      @media screen and (max-width: 360px) {
+         font-size: 18px;
+         font-weight: 600;
+         line-height: 28px;
+      }
+
+   }
+
+}
+.faqs_content_items_block{
+   display: flex;
+   justify-content: space-between;
+   max-width: 880px;
+   margin: 0 auto;
+   gap: 28px;
+   img{
+      width: 34px;
+      object-fit: cover;
+      height: 100%;
+   }
+}
+
