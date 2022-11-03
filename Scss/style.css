@@ -1411,6 +1411,11 @@
   justify-content: center;
   gap: 60px;
 }
+@media screen and (max-width: 360px) {
+  .faqs_content {
+    margin-top: 135px;
+  }
+}
 
 .faqs_content_items {
   display: flex;
